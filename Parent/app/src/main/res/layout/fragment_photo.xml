@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Match.Vertical"
+    android:padding="1dp"
+    android:background="@drawable/border_fragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/relativelayout">
+
+        <LinearLayout
+            style="@style/Match.Horizontal"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                style="@style/Wrap.Horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    style="@style/Wrap.Small"
+                    android:text="@string/enable_photo" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/img_photo_state"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                style="@style/Wrap.Horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    style="@style/Wrap.Small"
+                    android:text="@string/enable_permission" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/img_permission_state"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_get_photo"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_marginTop="-7dp"
+            android:layout_marginBottom="-7dp"
+            android:secondaryProgressTint="@color/colorAccentTransp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/relativelayout"
+        android:background="@color/colorHintDark"/>
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/Match"
+        android:layout_below="@+id/view">
+
+        <include layout="@layout/wait_placeholder"/>
+
+        <include layout="@layout/not_have_placeholder"/>
+
+        <include layout="@layout/failed_placeholder"/>
+
+        <include layout="@layout/recyclerview"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/Wrap"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="17dp"
+            android:id="@+id/floating_button_photo"
+            app:fab_size="mini"
+            app:elevation="0dp"
+            app:fab_colorNormal="@color/colorAccentSemiTransp"
+            app:fab_colorRipple="@color/colorAccent"
+            android:src="@drawable/ic_arrow_down"
+            android:visibility="gone"
+            app:pressedTranslationZ="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/floating_menu"/>
+
+</RelativeLayout>

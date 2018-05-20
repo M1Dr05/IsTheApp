@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/maps"
+        android:id="@+id/nav_maps"
+        android:icon="@drawable/ic_map_black_24dp"/>
+
+    <item android:title="@string/calls"
+        android:id="@+id/nav_call"
+        android:icon="@drawable/ic_call_black_24dp"/>
+
+    <item android:title="@string/messages"
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/ic_message_black_24dp"/>
+
+    <item android:title="@string/photographic"
+        android:id="@+id/nav_photographic"
+        android:icon="@drawable/ic_linked_camera_black_24dp"/>
+
+    <item android:title="@string/keylog"
+        android:id="@+id/nav_keylog"
+        android:icon="@drawable/ic_keyboard_black_24dp"/>
+    
+</menu>

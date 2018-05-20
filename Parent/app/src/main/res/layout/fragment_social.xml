@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Match"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_fragment"
+    android:padding="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/Match.Horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            style="@style/Wrap.Small"
+            android:text="@string/enable_permission" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/img_permission_state"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHintDark"/>
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/Match">
+
+        <LinearLayout
+            style="@style/Match.Vertical"
+            android:gravity="center"
+            android:id="@+id/view_credentials"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include layout="@layout/wait_placeholder"/>
+
+            <ImageView
+                style="@style/Wrap"
+                android:visibility="gone"
+                android:id="@+id/done_social"
+                app:srcCompat="@drawable/ic_fuck_yeah_meme"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                style="@style/Wrap.Large"
+                android:text="@string/credentials"
+                android:textColor="@color/colorAccentSemiTransp" />
+
+            <LinearLayout
+                style="@style/Match.Width"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/Wrap.Medium"
+                    android:text="@string/email"
+                    android:textColor="@color/colorAccentSemiTransp" />
+                <TextView
+                    style="@style/Wrap.Medium"
+                    android:id="@+id/txt_email_get_social"
+                    android:text="@string/ellipsis"
+                    android:layout_marginStart="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Match.Width"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/Wrap.Medium"
+                    android:text="@string/password"
+                    android:textColor="@color/colorAccentSemiTransp" />
+                <TextView
+                    style="@style/Wrap.Medium"
+                    android:id="@+id/txt_pass_get_social"
+                    android:text="@string/ellipsis"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/failed_placeholder"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b53f43</color>
+    <color name="colorPrimaryDark">#933236</color>
+    <color name="colorAccent">#b53f43</color>
+    <color name="colorAccentTransp">#27b53f43</color>
+    <color name="colorAccentSemiTransp">#9ab53f43</color>
+
+    <color name = "transparent">#99888888</color>
+    <color name = "transparentWhite">#00000000</color>
+    <color name = "colorBorderLogin">#D9D9D9</color>
+    <color name = "colorGrayTransp">#efefef</color>
+    <color name = "colorHintDark">#BBBBBB</color>
+
+    <color name = "colorTextPrimaryDark">#FEFEFE</color>
+
+    <color name = "colorTextDisabled">#888686</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorShaft">#95303030</color>
+</resources>
