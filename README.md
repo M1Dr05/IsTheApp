@@ -3,6 +3,15 @@ Open-source android spyware
 
 Contains two apps, the child app is the client that will be installed on the victim device, the app parent is the one that will be installed on the observer device.
 
+# Feacture
+- Real-time location.
+- Recording calls.
+- SMS.
+- Environment recording.
+- Take pictures.
+- Keylogger.
+- Phishing network social.
+
 # Build this project
 the applications work with the api of firebase with which you will have to create a project in firebase and synchronize the applications with such project.
 [Firebase API](https://firebase.google.com/)
