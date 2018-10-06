@@ -26,7 +26,7 @@ allprojects {
     }
 
     ext {
-        PACKAGE_CHECK_SOCIAL = "\"com.facebook.orca\""
+        PACKAGE_CHECK_SOCIAL = "\"YOU_NETWORK_SOCIAL\""
     }
 
 }
