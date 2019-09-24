@@ -12,18 +12,6 @@
         android:gravity="center_horizontal"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:background="@drawable/ic_header_social"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/english_espa_ol"/>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_marginTop="60dp"
@@ -60,58 +48,6 @@
             android:backgroundTint="@color/blue"
             android:textColor="@color/colorWhite"
             android:id="@+id/btn_login_social"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/blue"
-            android:text="@string/forgot_password"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:weightSum="5"
-            android:layout_marginTop="30dp"
-            android:layout_height="wrap_content">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:background="@color/gray_btn_bg_color"
-                android:layout_height="1dp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:layout_height="wrap_content"
-                android:text="@string/or"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_height="1dp"
-                android:background="@color/gray_btn_bg_color"/>
-
-        </LinearLayout>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/create_new_facebook_account"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="center"
-            android:backgroundTint="@color/colorGreen_01"
-            android:textColor="@color/colorWhite"/>
 
     </LinearLayout>
 
