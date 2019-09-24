@@ -12,6 +12,7 @@ The download of the IsTheApp app is 100% free. However, developing and supportin
 
 # Feacture
 - Multiple Child clients
+- Hidden app icon (stealth mode)
 - Real-time location.
 - Recording calls: incoming/outgoing.
 - SMS: received/sent.
