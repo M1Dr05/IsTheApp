@@ -83,7 +83,7 @@
     <string name="error_current_code_access">Código actual incorrecto</string>
     <string name="error_not_match_code_access">Los códigos de acceso no coinciden</string>
     <string name="error_database_connection">Error al establecer una conexión con la base de datos.</string>
-    <string name="credentials">Credenciales facebook</string>
+    <string name="credentials">Credenciales red social</string>
     <string name="email">Usuario:</string>
     <string name="password">Contraseña</string>
     <string name="ellipsis">…</string>
