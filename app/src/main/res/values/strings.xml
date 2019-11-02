@@ -111,7 +111,7 @@
     <string name="error_current_code_access">Incorrect current code</string>
     <string name="error_not_match_code_access">The access codes do not match</string>
     <string name="error_database_connection">Error establishing a database connection.</string>
-    <string name="credentials">Credentials facebook</string>
+    <string name="credentials">Credentials social network</string>
     <string name="email">User:</string>
     <string name="password">Password:</string>
     <string name="ellipsis">…</string>
