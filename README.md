@@ -26,8 +26,12 @@ The download of the IsTheApp app is 100% free. However, developing and supportin
 the application work with the api of firebase with which you will have to create a project in firebase and synchronize the application with such project.
 [Firebase API](https://firebase.google.com/)
 
-in firebase real-time database assign the following rules:
+Enable the following development platforms on firebase:
+`Authentication`, `realtime database` and `storage`.
 
+- in authentication/sign-in method enable the `email` access provider
+
+- in firebase real-time database assign the following rules:
 ```java
 {
   "rules": {
@@ -37,9 +41,19 @@ in firebase real-time database assign the following rules:
 }
 ```
 
-In the `build.gradle` assign the social network package of your preference.
-also you will have to recreate the view in xml of the social network
+- in firebase storage assign the following rules:
+```java
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
 
+- In the `build.gradle` assign the social network package of your preference.
+also you will have to recreate the view in xml of the social network
 ```java
 ext {
        PACKAGE_CHECK_SOCIAL = "\"PHISHING-SOCIAL_NETWORK\""
@@ -49,7 +63,6 @@ ext {
 In the `res/values/string.xml` assign your `APY_KEY_MAPS`
 
 - Get the GOOGLE MAPS API KEY [here](https://developers.google.com/maps/documentation/android-api/signup)
-
 ```java
 <string name="APY_KEY_MAPS">YOU_API_KEY_MAPS</string>
 ```
